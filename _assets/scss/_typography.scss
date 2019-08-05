@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Petit+Formal+Script|Work+Sans:400,700&display=swap');
+
+*, *:before *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size:16px;
+    box-sizing: border-box;
+    color:#FFFFFF;
+}
+
+
+
+ 
+h1, h2, h3, h4, h5, h6 { 
+    color: rgb(140, 245, 248);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(31, 31, 31);
+}
+
+h1 {font-size: 4.5em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2.0em;}
+h4 {font-size: 1.8em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+blockquote,
+p.author,
+.site-thought {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1em;
+    color:#FFFFFF;
+    text-shadow: 2px 2px 2px rgb(31, 31, 31);
+    
+}
+
