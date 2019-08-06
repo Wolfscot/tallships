@@ -234,6 +234,66 @@ p.author {
   padding: 0.5em;
   border-radius: 0.3em; }
 
+.form {
+  display: flex;
+  margin: 2rem auto;
+  background: var(--color-body-box);
+  border: 1px solid var(--color-body-text);
+  border-radius: 0.3em;
+  width: 80%;
+  height: auto; }
+
+.form-image {
+  flex: 0 0 50%;
+  background: url(../images/tall-ship-emblem_navy.jpg) no-repeat center center;
+  background-size: cover; }
+
+.form-info {
+  flex: 0 0 50%;
+  padding: 1.5em;
+  color: var(--color-body-text);
+  display: flex; }
+
+.form-info legend {
+  color: var(--color-body-a); }
+
+.form-info form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: space-between;
+  align-items: center;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 14px; }
+
+.form-info p {
+  display: flex;
+  margin: 1em 0; }
+
+.form-info p.full-width {
+  flex-basis: 100%; }
+
+.form-info a {
+  text-align: center; }
+
+.button {
+  width: 30%;
+  text-align: center;
+  padding: 0.5em 0;
+  margin: 0 1.5em; }
+
+label {
+  flex: 0 0 45%;
+  margin: 1em 0; }
+
+input, select, option {
+  flex: 0 0 45%;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  background: var(--color-body-bgrd);
+  color: var(--color-body-box);
+  width: 40%;
+  margin: 1em 0; }
+
 .site-footer {
   background: var(--color-body-navh);
   color: var(--color-body-text);
