@@ -1,7 +1,7 @@
 .site-footer {
-    background:#014E6D;
-    color:#ffffff;
-    border: 1px solid #ffffff;
+    background:var(--color-body-navh);
+    color: var(--color-body-text);
+    border: 1px solid var(--color-body-text);
 }
 .site-footer p {
     text-align: center;
@@ -9,8 +9,8 @@
 
 }
 .sponsors {
-    border-bottom: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid var(--color-body-text);
+    border-top: 1px solid var(--color-body-text);
 }
 
 .sponsors-list {
@@ -72,17 +72,17 @@
 .public-list a,
 .social-list a {
     display: block;
-    color: #ffffff;
+    color: var(--color-body-text);
     margin-bottom: 1em;
 }
 .public-list a i.fas:before {
-    color:#ffffff;
+    color:var(--color-body-text);
     margin-right: 0.5em;
     display: block; 
 }
 
 .social-list a i.fab:before {
-    color:#ffffff;
+    color:var(--color-body-text);
     margin-right:0.5em;
     display: block;      
 }

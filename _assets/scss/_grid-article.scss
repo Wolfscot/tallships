@@ -1,0 +1,42 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .item a,
+.gallery .item p,
+.gallery .item img {
+    display: block;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none outside;
+    overflow: hidden;
+    grid-column: span 1;
+    border: 1px solid var(--color-body-text);
+    border-radius: 0.3em;
+    background: var(--color-body-box);
+    color: var(--color-body-text);
+    margin: 0.5em 0;
+    text-align: center;
+    
+    
+    
+}
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item p {
+    padding: 0.5em;
+}
+

@@ -1,9 +1,9 @@
 .page {
-    border: 1px solid #014E6D;
     display:grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     align-content: center;
+    background: var(--color-body-a);
 
 }
 .wheel.first,
@@ -15,11 +15,11 @@
     grid-column: 2/ span 4;
 }
 .page-title h2 {
-    color: #014E6D;
+    color:var(--color-body-navh);
 }
 
 .info {
-    background: #43A5CF;
+    background: var(--color-body-bgrd);
     padding: 0.5em 2em;
 }
 blockquote {
@@ -32,3 +32,4 @@ p.author {
 .info li {
     list-style: none outside;
 }
+

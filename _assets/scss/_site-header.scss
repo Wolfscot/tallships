@@ -9,7 +9,7 @@
     
     padding: 5rem;
     text-align:center;
-    color: #ffffff;
+    color: var(--color-body-text);
        
 }
 
@@ -18,7 +18,7 @@
     
 }
 .site-title > a {
-    color:#ffffff;
+    color:var(--color-body-text);
 }
 
 .banner .site-thought {

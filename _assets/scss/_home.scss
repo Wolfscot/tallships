@@ -1,10 +1,10 @@
 .content h3 {
-    color: #ffffff;
+    color: var(--color-body-text);
     padding: 0.5em 0;
 }
 .topics {
-    background:#1bb2b8;
-    color: #ffffff;
+    background: var(--color-body-bgrd);
+    color: var(--color-body-text);
     
 }
 .topic {
@@ -17,9 +17,12 @@
 }
 .subtopic {
     flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: none;
-    color: #ffffff;
-    background: #002a54;
+    color: var(--color-body-text);
+    background: var(--color-body-box);
     margin-bottom: 2rem;
     text-align: center;
     overflow: hidden;
@@ -48,8 +51,8 @@
 
 
 .subscribe {
-    background:#02798A;
-    color:white;
+    background:var(--color-body-anim);
+    color: var(--color-body-text);
     text-align: center;
 }
 
@@ -57,9 +60,8 @@
     margin-bottom: 1rem;
 }
 .subscribe input {
-    background: #6BBFFF;
-    color: #ffffff;
-    border: 1px solid #00a1a7;
+    background: var(--color-body-bgrd);
+    color: var(--color-body-text);
     padding: 0.5em;
     font-style: italic;
     border-radius: 0.3em;
@@ -67,9 +69,9 @@
     width:40%;
 }
 .subscribe label {
-    background: #6BBFFF;
-    color: #ffffff;
-    border: 1px solid #6BBFFF;
+    background: var(--color-body-bgrd);
+    color: var(--color-body-text);
+    border: 1px solid var(--color-body-bgrd);
     padding: 0.5em;
     border-radius: 0.3em;
 }

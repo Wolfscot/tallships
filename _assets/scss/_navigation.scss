@@ -1,5 +1,5 @@
 .site-nav {
-    background: #014E6D;
+    background: var(--color-body-navh);
 }
 .site-nav > ul {
     display:flex;
@@ -16,26 +16,26 @@
 .site-nav a {
     display: block;
     padding: 0.5em;
-    border: 2px solid #014E6D;
+    border: 2px solid var(--color-body-navh);
     border-radius:0.3em;
-    color:#ffffff;
+    color: var(--color-body-text);
 }
 .site-nav a i.fas:before {
-    color:#ffffff;
+    color:var(--color-body-text);
     margin-right:0.5em;
     
 }
 
 .site-nav li.selected > a,
 .site-nav a:hover {
-    background: #ffffff;
-    color: #014E6D;
-    border: 2px solid #ffffff;
+    background: var(--color-body-text);
+    color: var(--color-body-navh);
+    border: 2px solid var(--color-body-text);
 }
 
 .site-nav li.selected > a i.fas:before,
 .site-nav a:hover i.fas:before {
-    background: #ffffff;
-    color: #014E6D;
+    background: var(--color-body-text);
+    color: var(--color-body-navh);
     
 }

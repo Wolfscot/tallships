@@ -9,14 +9,14 @@ html {
     font-family: 'Work Sans', Helvetica, sans-serif;
     font-size:16px;
     box-sizing: border-box;
-    color:#FFFFFF;
+    color:var(--color-body-text);
 }
 
 
 
  
 h1, h2, h3, h4, h5, h6 { 
-    color: rgb(140, 245, 248);
+    color: #8cf5f8;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -32,15 +32,17 @@ h6 {font-size: 1.2em;}
 
 a {
     text-decoration: none;
-    color: #000;
-
+    color: var(--color-body-box);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
+
 blockquote,
 p.author,
 .site-thought {
     font-family: 'Petit Formal Script', cursive;
     font-size: 1em;
-    color:#FFFFFF;
+    color:var(--color-body-text);
     text-shadow: 2px 2px 2px rgb(31, 31, 31);
     
 }
