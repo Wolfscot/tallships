@@ -1,5 +1,5 @@
 .page {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     align-content: center;
@@ -15,7 +15,7 @@
     grid-column: 2/ span 4;
 }
 .page-title h2 {
-    color:var(--color-body-navh);
+    color: var(--color-body-navh);
 }
 
 .info {
@@ -33,3 +33,37 @@ p.author {
     list-style: none outside;
 }
 
+
+.travel {
+    background: var(--color-body-box);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.ceremony {
+    background: var(--color-body-text);
+    color: var(--color-body-box);
+    text-align: center;
+    padding: 0.5em;
+    position: relative;
+    
+
+    
+}
+.ceremony h4 {
+    color: var(--color-body-box);
+}
+/*.ceremony span, .ceremony img {
+    display: block;
+}
+.ceremony img {
+    width:20%;
+    height: auto;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid var(--color-body-box);
+    position: absolute;
+    box-shadow: 5px 5px 10px 5px rgba(0,42,84,1);
+}
+*/

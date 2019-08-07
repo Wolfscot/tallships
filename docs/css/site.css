@@ -22,6 +22,7 @@
 html {
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 1.5;
   box-sizing: border-box;
   color: var(--color-body-text); }
 
@@ -120,6 +121,35 @@ p.author {
 .info li {
   list-style: none outside; }
 
+.travel {
+  background: var(--color-body-box);
+  padding: 0.5em;
+  text-align: center; }
+
+.ceremony {
+  background: var(--color-body-text);
+  color: var(--color-body-box);
+  text-align: center;
+  padding: 0.5em;
+  position: relative; }
+
+.ceremony h4 {
+  color: var(--color-body-box); }
+
+/*.ceremony span, .ceremony img {
+    display: block;
+}
+.ceremony img {
+    width:20%;
+    height: auto;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid var(--color-body-box);
+    position: absolute;
+    box-shadow: 5px 5px 10px 5px rgba(0,42,84,1);
+}
+*/
 .banner {
   background: linear-gradient(rgba(165, 163, 163, 0.3), rgba(165, 163, 163, 0.3)), url(../images/sailing_ship.jpg) no-repeat center center;
   background-size: cover;
@@ -590,3 +620,32 @@ ul.crew-list .crew-name {
     transform: rotate(334deg); }
   100% {
     transform: rotate(360deg); } }
+
+.globe {
+  background-image: url(../images/globe.jpg);
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px 5px #1bb2b8;
+  animation: rotation 30s linear reverse infinite; }
+
+.globe:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5) inset;
+  z-index: 10; }
+
+@-webkit-keyframes rotation {
+  100% {
+    background-position: 100%; } }
+
+@keyframes rotation {
+  100% {
+    background-position: 100%; } }
