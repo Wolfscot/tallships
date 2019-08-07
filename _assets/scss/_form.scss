@@ -1,24 +1,42 @@
 .form {
     display:flex;
-    margin: 2rem auto;
+    margin: 2rem auto; 
     background: var(--color-body-box);
     border: 1px solid var(--color-body-text);
     border-radius: 0.3em;
-    width:80%;
+    width: 80%;
     height:auto;
     
 }
 
 .form-image {
     flex: 0 0 50%;
-    background: url(../images/tall-ship-emblem_navy.jpg) no-repeat center center;
-    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-image img {
+    width: 90%;
+    height:auto;
+    display:block;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 45%;
+}
+
+.image img:after {
+    padding-top:100%;
+    content:'';
+    display:block;
 }
 .form-info {
     flex: 0 0 50%;
     padding: 1.5em;
     color: var(--color-body-text);
-    display:flex
+    display:flex;
 }
 
 .form-info legend {
@@ -46,11 +64,10 @@
 .form-info a {
     text-align: center;
 }
-.button {
-    width:30%;
+.button.submit {
+    width:80%;
     text-align:center;
-    padding:0.5em 0;
-    margin: 0 1.5em;
+    flex-basis: 100%;
 }
  label {
     flex: 0 0 45%;
