@@ -33,7 +33,9 @@ p.author {
     list-style: none outside;
 }
 
-
+.travel, .ceremony {
+    margin: 0.5em;
+}
 .travel {
     background: var(--color-body-box);
     padding: 0.5em;
@@ -46,9 +48,7 @@ p.author {
     text-align: center;
     padding: 0.5em;
     position: relative;
-    
-
-    
+      
 }
 .ceremony h4 {
     color: var(--color-body-box);

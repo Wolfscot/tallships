@@ -121,6 +121,9 @@ p.author {
 .info li {
   list-style: none outside; }
 
+.travel, .ceremony {
+  margin: 0.5em; }
+
 .travel {
   background: var(--color-body-box);
   padding: 0.5em;
