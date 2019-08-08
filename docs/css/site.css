@@ -313,8 +313,7 @@ p.author {
   flex-wrap: wrap;
   justify-items: space-between;
   align-items: center;
-  font-family: 'Petit Formal Script', cursive;
-  font-size: 14px; }
+  font-family: 'Petit Formal Script', cursive; }
 
 .form-info p {
   display: flex;
@@ -423,7 +422,7 @@ input, select, option {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
   grid-auto-flow: dense;
   justify-content: center;
@@ -434,28 +433,48 @@ input, select, option {
 .gallery .item img {
   display: block; }
 
-.item {
+.gallery-item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  list-style: none outside;
-  overflow: hidden;
   grid-column: span 1;
-  border: 1px solid var(--color-body-text);
+  border: 3px solid var(--color-body-text);
   border-radius: 0.3em;
   background: var(--color-body-box);
   color: var(--color-body-text);
-  margin: 0.5em 0;
-  text-align: center; }
+  margin: 1em 0; }
 
-.item img {
-  width: 100%;
-  height: auto;
+.gallery-img {
+  flex: 0 0 100%;
+  display: block;
+  position: relative;
+  overflow: hidden; }
+
+.gallery-img:before,
+.gallery-img:after {
+  padding-top: 30%;
+  content: '';
   display: block; }
 
-.item p {
-  padding: 0.5em; }
+.gallery-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.gallery-content {
+  flex: 0 0 100%; }
+
+.gallery-content .button {
+  margin: 1em auto; }
+
+.gallery-item p {
+  margin: 1em; }
 
 .crew-content {
   padding: 0;
@@ -627,8 +646,8 @@ ul.crew-list .crew-name {
 .globe {
   background-image: url(../images/globe.jpg);
   margin: auto;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   overflow: hidden;
   position: relative;
   border-radius: 100%;
