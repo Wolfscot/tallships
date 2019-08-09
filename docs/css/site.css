@@ -711,3 +711,37 @@ body.loaded .site-nav li {
 @keyframes rotation {
   100% {
     background-position: 100%; } }
+
+.gallery-item:hover {
+  -webkit-animation: tremble 0.7s ease-in-out;
+          animation: tremble 0.7s ease-in-out;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+@-webkit-keyframes tremble {
+  0% {
+    transform: translateX(0); }
+  20% {
+    transform: translateX(-1em); }
+  40% {
+    transform: translateX(1em); }
+  60% {
+    transform: translateX(-0.5em); }
+  80% {
+    transform: translateX(0.5em); }
+  80% {
+    transform: translateX(0); } }
+
+@keyframes tremble {
+  0% {
+    transform: translateX(0); }
+  20% {
+    transform: translateX(-1em); }
+  40% {
+    transform: translateX(1em); }
+  60% {
+    transform: translateX(-0.5em); }
+  80% {
+    transform: translateX(0.5em); }
+  80% {
+    transform: translateX(0); } }

@@ -71,10 +71,34 @@
 
 }
 
-
     
 @keyframes rotation {
     100% {
         background-position:100%
+    }
+}
+
+.gallery-item:hover  {
+    animation: tremble 0.7s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes tremble {
+    0% { transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-1em);
+    }
+    40% {
+        transform: translateX(1em);
+    }
+    60% {
+        transform: translateX(-0.5em);
+    }
+    80% {
+        transform: translateX(0.5em);
+    }
+    80% {
+        transform: translateX(0);
     }
 }
