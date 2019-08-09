@@ -573,8 +573,8 @@ body.loaded .site-nav li {
 .ship {
   width: 150px;
   height: auto;
-  -webkit-animation: sail 20s linear;
-          animation: sail 20s linear;
+  -webkit-animation: sail 10s linear;
+          animation: sail 10s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
@@ -651,8 +651,8 @@ body.loaded .site-nav li {
 .globe-area .globe {
   background-image: url(../images/globe.jpg);
   margin: auto;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   border-radius: 100%;
