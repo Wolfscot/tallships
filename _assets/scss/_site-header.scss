@@ -1,30 +1,31 @@
 .site-header {
-   
+    .site-banner {
+        background: linear-gradient(rgba(165, 163, 163, 0.3), rgba(165, 163, 163, 0.3)),    
+        url(../images/sailing_ship.jpg) no-repeat center center;
+        background-size: cover;
+        
+        padding: 5rem;
+        text-align:center;
+        color: var(--color-body-text);
+          
+        .site-title { 
+            margin:2rem 0;
+            
+        }
+        .site-title > a {
+            color:var(--color-body-text);
+        }
+        
+        .site-thought {
+            margin-top: 5rem;
+            
+        }
+        
+    }
 }
 
-.banner {
-    background: linear-gradient(rgba(165, 163, 163, 0.3), rgba(165, 163, 163, 0.3)),    
-    url(../images/sailing_ship.jpg) no-repeat center center;
-    background-size: cover;
-    
-    padding: 5rem;
-    text-align:center;
-    color: var(--color-body-text);
-       
-}
 
-.site-title { 
-    margin:2rem 0;
-    
-}
-.site-title > a {
-    color:var(--color-body-text);
-}
 
-.banner .site-thought {
-    margin-top: 5rem;
-    
-}
 
 
 

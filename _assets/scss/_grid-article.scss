@@ -7,13 +7,16 @@
     align-items: center;
     padding: 2em;
     margin: 2em 0;
+
+    &-item a,
+    &-item p,
+    &-item img {
+    display: block;
+    }
+
 }
 
-.gallery .gallery-item a,
-.gallery .gallery-item p,
-.gallery .gallery-item img {
-    display: block;
-}
+ 
 .gallery-item {
     display: flex;
     flex-wrap: wrap;

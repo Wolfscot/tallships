@@ -126,21 +126,18 @@ p.author,
   .info .ceremony h4 {
     color: var(--color-body-box); }
 
-.banner {
+.site-header .site-banner {
   background: linear-gradient(rgba(165, 163, 163, 0.3), rgba(165, 163, 163, 0.3)), url(../images/sailing_ship.jpg) no-repeat center center;
   background-size: cover;
   padding: 5rem;
   text-align: center;
   color: var(--color-body-text); }
-
-.site-title {
-  margin: 2rem 0; }
-
-.site-title > a {
-  color: var(--color-body-text); }
-
-.banner .site-thought {
-  margin-top: 5rem; }
+  .site-header .site-banner .site-title {
+    margin: 2rem 0; }
+  .site-header .site-banner .site-title > a {
+    color: var(--color-body-text); }
+  .site-header .site-banner .site-thought {
+    margin-top: 5rem; }
 
 .site-nav {
   background: var(--color-body-navh); }
@@ -324,35 +321,30 @@ p.author,
       height: 100px; }
     .site-footer .public-list {
       margin-left: -2rem; }
-
-.public-list, .social-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; }
-
-.public-list li,
-.social-list li {
-  list-style: none outside;
-  display: block; }
-
-.public-list h5,
-.social-list h5,
-.public-list a,
-.social-list a {
-  display: block;
-  color: var(--color-body-text);
-  margin-bottom: 1em; }
-
-.public-list a i.fas:before {
-  color: var(--color-body-text);
-  margin-right: 0.5em;
-  display: block; }
-
-.social-list a i.fab:before {
-  color: var(--color-body-text);
-  margin-right: 0.5em;
-  display: block; }
+    .site-footer .public .public-list, .site-footer .public .social-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .site-footer .public .public-list li,
+    .site-footer .public .social-list li {
+      list-style: none outside;
+      display: block; }
+    .site-footer .public .public-list h5,
+    .site-footer .public .social-list h5,
+    .site-footer .public .public-list a,
+    .site-footer .public .social-list a {
+      display: block;
+      color: var(--color-body-text);
+      margin-bottom: 1em; }
+    .site-footer .public .public-list a i.fas:before {
+      color: var(--color-body-text);
+      margin-right: 0.5em;
+      display: block; }
+    .site-footer .public .social-list a i.fab:before {
+      color: var(--color-body-text);
+      margin-right: 0.5em;
+      display: block; }
 
 .gallery {
   display: grid;
@@ -363,11 +355,10 @@ p.author,
   align-items: center;
   padding: 2em;
   margin: 2em 0; }
-
-.gallery .gallery-item a,
-.gallery .gallery-item p,
-.gallery .gallery-item img {
-  display: block; }
+  .gallery-item a,
+  .gallery-item p,
+  .gallery-item img {
+    display: block; }
 
 .gallery-item {
   display: flex;
@@ -437,82 +428,66 @@ p.author,
   padding: 0;
   margin: 2em;
   background: var(--color-body-box); }
-
-.crew-content h4 {
-  padding: 0.5em 0; }
-
-ul.crew-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background: var(--color-body-box); }
-
-ul.crew-list li {
-  flex: 0 0 29%;
-  display: block;
-  list-style: none outside;
-  text-align: center;
-  margin: 1em;
-  padding-bottom: 1em; }
-
-ul.crew-list span {
-  display: block; }
-
-.crew-list .crew-avatar {
-  margin: 0 auto;
-  margin-bottom: 1em; }
-
-.crew-avatar {
-  width: 100px;
-  box-shadow: 5px 5px 10px 5px #1bb2b8;
-  display: block;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative; }
-
-.crew-avatar:before,
-.crew-avatar:after {
-  display: block;
-  content: ''; }
-
-.crew-avatar:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  pointer-events: none; }
-
-.crew-avatar:after {
-  padding-top: 100%; }
-
-.crew-avatar img {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0%;
-  transform: translateY(-50%); }
-
-ul.crew-list .crew-name {
-  font-family: 'Petit Formal Script', cursive;
-  color: var(--color-body-a);
-  margin: 0.5em 0; }
+  .crew-content h4 {
+    padding: 0.5em 0; }
+  .crew-content ul.crew-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--color-body-box); }
+    .crew-content ul.crew-list li {
+      flex: 0 0 29%;
+      display: block;
+      list-style: none outside;
+      text-align: center;
+      margin: 1em;
+      padding-bottom: 1em; }
+      .crew-content ul.crew-list li .crew-avatar {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        width: 100px;
+        box-shadow: 5px 5px 10px 5px #1bb2b8;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative; }
+        .crew-content ul.crew-list li .crew-avatar:before, .crew-content ul.crew-list li .crew-avatar:after {
+          display: block;
+          content: ''; }
+        .crew-content ul.crew-list li .crew-avatar:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          pointer-events: none; }
+        .crew-content ul.crew-list li .crew-avatar:after {
+          padding-top: 100%; }
+        .crew-content ul.crew-list li .crew-avatar img {
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 0%;
+          transform: translateY(-50%); }
+      .crew-content ul.crew-list li .crew-name {
+        font-family: 'Petit Formal Script', cursive;
+        color: var(--color-body-a);
+        margin: 0.5em 0; }
 
 .crew-content.two {
   padding: 0;
   margin: 2em;
   background: var(--color-body-text); }
-
-.crew-content.two ul.crew-list {
-  background: var(--color-body-text); }
-
-.crew-content.two h4,
-.crew-content.two ul.crew-list .crew-position {
-  color: var(--color-body-box); }
-
-.crew-content.two .crew-avatar {
-  box-shadow: 5px 5px 10px 5px #002a54; }
+  .crew-content.two h4,
+  .crew-content.two ul.crew-list,
+  .crew-content.two .crew-position {
+    color: var(--color-body-box); }
+  .crew-content.two ul.crew-list {
+    background: var(--color-body-text); }
+    .crew-content.two ul.crew-list .crew-avatar {
+      box-shadow: 5px 5px 10px 5px #002a54; }
 
 .crew-content.two ul.crew-list .crew-name {
   font-family: 'Petit Formal Script', cursive;
