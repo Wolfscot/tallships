@@ -1,6 +1,6 @@
 .site-title {
     opacity:0;
-    transform:translateX(-3em);
+    transform:translateX(-4em);
     transition: opacity 0.5s ease-in, transform 0.4s ease-in-out;
 
 }
@@ -11,7 +11,7 @@ body.loaded .site-title {
 
 .site-thought {
     opacity:0;
-    transform:translateX(-3em);
+    transform:translateX(-4em);
     transition: opacity 0.8s ease-in, transform 0.4s ease-in-out;
 }
 
