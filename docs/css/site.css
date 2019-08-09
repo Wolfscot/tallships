@@ -74,11 +74,10 @@ p.author,
   padding: 0.5em;
   width: 30%;
   text-align: center; }
-
-.button:hover {
-  background: var(--color-body-text);
-  color: var(--color-body-box);
-  outline: var(--color-body-box); }
+  .button:hover {
+    background: var(--color-body-text);
+    color: var(--color-body-box);
+    outline: var(--color-body-box); }
 
 .site {
   display: grid;
@@ -293,11 +292,6 @@ p.author {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 45%; }
-
-.image img:after {
-  padding-top: 100%;
-  content: '';
-  display: block; }
 
 .form-info {
   flex: 0 0 50%;
@@ -643,7 +637,7 @@ ul.crew-list .crew-name {
   100% {
     transform: rotate(360deg); } }
 
-.globe {
+.globe-area .globe {
   background-image: url(../images/globe.jpg);
   margin: auto;
   width: 500px;
@@ -653,16 +647,15 @@ ul.crew-list .crew-name {
   border-radius: 100%;
   box-shadow: 5px 5px 10px 5px #1bb2b8;
   animation: rotation 30s linear reverse infinite; }
-
-.globe:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5) inset;
-  z-index: 10; }
+  .globe-area .globe:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5) inset;
+    z-index: 10; }
 
 @-webkit-keyframes rotation {
   100% {

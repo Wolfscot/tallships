@@ -7,10 +7,12 @@
     padding: 0.5em;
     width: 30%;
     text-align: center;
-}
-.button:hover  {
-    background: var(--color-body-text);
-    color: var(--color-body-box);
-    outline: var(--color-body-box);
 
+    &:hover  {
+        background: var(--color-body-text);
+        color: var(--color-body-box);
+        outline: var(--color-body-box);
+    
+    }
 }
+
