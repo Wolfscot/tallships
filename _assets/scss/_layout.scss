@@ -8,21 +8,22 @@
         "main main"
         "footer footer";
 
+        &-header {
+            grid-area: header;
+        }
+        
+        &-main {
+            grid-area: main;
+        }
+        
+        
+        
+        &-footer {
+            grid-area: footer;
+        }
+        
 
 }
 
-.site-header {
-    grid-area: header;
-}
-
-.site-main {
-    grid-area: main;
-}
-
-
-
-.site-footer {
-    grid-area: footer;
-}
 
 

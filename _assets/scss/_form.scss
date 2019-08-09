@@ -7,74 +7,82 @@
     width: 80%;
     height:auto;
     
+    &-image {
+        flex: 0 0 50%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 90%;
+            height:auto;
+            display:block;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 45%;
+        }
+    }
+    &-info {
+        flex: 0 0 50%;
+        padding: 1.5em;
+        color: var(--color-body-text);
+        display:flex;
+
+        legend {
+            color: var(--color-body-a);
+        }
+
+        form {
+            display: flex;
+            flex-wrap:wrap;
+            justify-items: space-between;
+            align-items: center;
+            font-family: 'Petit Formal Script', cursive;
+        }
+        
+        p {
+            display: flex;
+            margin: 1em 0;
+        }
+
+        p.full-width {
+            flex-basis: 100%;
+        }
+
+        a {
+            text-align: center;
+        }
+        
+        .button.submit {
+            width:80%;
+            text-align:center;
+            flex-basis: 100%;
+        }
+
+        label {
+            flex: 0 0 45%;
+            margin: 1em 0;
+        }
+
+        input, select, option {
+            flex: 0 0 45%;
+            border-radius: 0.3em;
+            padding: 0.5em;
+            background: var(--color-body-bgrd);
+            color: var(--color-body-box);
+            width: 40%;
+            margin: 1em 0;
+        }
+    }
 }
 
-.form-image {
-    flex: 0 0 50%;
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.form-image img {
-    width: 90%;
-    height:auto;
-    display:block;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 45%;
-}
 
 
-.form-info {
-    flex: 0 0 50%;
-    padding: 1.5em;
-    color: var(--color-body-text);
-    display:flex;
-}
 
-.form-info legend {
-    color: var(--color-body-a);
-}
 
-.form-info form {
-    display: flex;
-    flex-wrap:wrap;
-    justify-items: space-between;
-    align-items: center;
-    font-family: 'Petit Formal Script', cursive;
-    
-    
-}
 
-.form-info p {
-    display: flex;
-    margin: 1em 0;
-}
-.form-info p.full-width {
-    flex-basis: 100%;
-}
 
-.form-info a {
-    text-align: center;
-}
-.button.submit {
-    width:80%;
-    text-align:center;
-    flex-basis: 100%;
-}
- label {
-    flex: 0 0 45%;
-    margin: 1em 0;
-}
- input, select, option {
-    flex: 0 0 45%;
-    border-radius: 0.3em;
-    padding: 0.5em;
-    background: var(--color-body-bgrd);
-    color: var(--color-body-box);
-    width: 40%;
-    margin: 1em 0;
-}
+
+
