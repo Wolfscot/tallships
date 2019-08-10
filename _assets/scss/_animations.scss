@@ -19,10 +19,10 @@
     }
     
     100% {
-        transform: translate(70rem);
+        transform: translate(50rem);
         
         @include bp(tablet){
-            transform: translate(35rem);
+            transform: translate(20rem);
         }
         @include bp(phone){
             transform: translate(10rem);
