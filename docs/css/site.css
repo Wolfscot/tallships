@@ -68,11 +68,11 @@ p.author,
   html {
     font-size: var(--font-size-body-little); } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: var(--font-size-body-small); } }
 
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
+@media screen and (min-width: 1025px) and (max-width: 1599px) {
   html {
     font-size: var(--font-size-body); } }
 
@@ -154,7 +154,7 @@ p.author,
   .gallery-item p,
   .gallery-item img {
     display: block; }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     .gallery {
       grid-template-columns: repeat(2, 1fr); } }
   @media screen and (max-width: 600px) {
@@ -319,6 +319,9 @@ input[type=checkbox],
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 2rem; }
+    @media screen and (max-width: 600px) {
+      .topics .topic {
+        justify-content: center; } }
     .topics .topic .subtopic {
       flex: 0 0 32%;
       display: flex;
@@ -331,6 +334,10 @@ input[type=checkbox],
       text-align: center;
       overflow: hidden;
       padding-bottom: 1em; }
+      @media screen and (max-width: 600px) {
+        .topics .topic .subtopic {
+          flex: 0 0 90%;
+          margin: 2em; } }
       .topics .topic .subtopic img {
         width: 100%;
         height: auto;
@@ -377,6 +384,9 @@ input[type=checkbox],
     display: block;
     position: relative;
     overflow: hidden; }
+    @media screen and (max-width: 600px) {
+      .form-image {
+        display: none; } }
     .form-image img {
       width: 90%;
       height: auto;
@@ -391,6 +401,11 @@ input[type=checkbox],
     padding: 1.5em;
     color: var(--color-body-text);
     display: flex; }
+    @media screen and (max-width: 600px) {
+      .form-info {
+        flex: 0 0 100%;
+        justify-content: center;
+        align-items: center; } }
     .form-info legend {
       color: var(--color-body-a); }
     .form-info form {
@@ -399,6 +414,10 @@ input[type=checkbox],
       justify-items: space-between;
       align-items: center;
       font-family: 'Petit Formal Script', cursive; }
+      @media screen and (max-width: 600px) {
+        .form-info form {
+          justify-content: center;
+          align-items: center; } }
     .form-info p {
       display: flex;
       margin: 1em 0; }
@@ -413,6 +432,9 @@ input[type=checkbox],
     .form-info label {
       flex: 0 0 45%;
       margin: 1em 0; }
+      @media screen and (max-width: 600px) {
+        .form-info label {
+          flex: 0 0 100%; } }
     .form-info input, .form-info select, .form-info option {
       flex: 0 0 45%;
       border-radius: 0.3em;
@@ -421,6 +443,9 @@ input[type=checkbox],
       color: var(--color-body-box);
       width: 40%;
       margin: 1em 0; }
+      @media screen and (max-width: 600px) {
+        .form-info input, .form-info select, .form-info option {
+          flex: 0 0 100%; } }
 
 .crew-content {
   padding: 0;
@@ -507,7 +532,7 @@ input[type=checkbox],
       display: flex;
       justify-content: space-between;
       align-items: center; }
-      @media screen and (max-width: 1023px) {
+      @media screen and (max-width: 1024px) {
         .site-footer .sponsors-list {
           flex-direction: row;
           flex-wrap: wrap;
@@ -633,20 +658,20 @@ body.loaded .site-nav li {
     transform: translateX(0); }
   100% {
     transform: translate(50rem);
-    @media screen and (max-width: 1023px) {
-      transform: translate(20rem); }
+    @media screen and (max-width: 1024px) {
+      transform: translate(1024px); }
     @media screen and (max-width: 600px) {
-      transform: translate(10rem); } } }
+      transform: translate(600px); } } }
 
 @keyframes sail {
   0% {
     transform: translateX(0); }
   100% {
     transform: translate(50rem);
-    @media screen and (max-width: 1023px) {
-      transform: translate(20rem); }
+    @media screen and (max-width: 1024px) {
+      transform: translate(1024px); }
     @media screen and (max-width: 600px) {
-      transform: translate(10rem); } } }
+      transform: translate(600px); } } }
 
 @media screen and (max-width: 600px) {
   .wheel {
@@ -717,6 +742,10 @@ body.loaded .site-nav li {
   border-radius: 100%;
   box-shadow: 5px 5px 10px 5px #1bb2b8;
   animation: rotation 30s linear reverse infinite; }
+  @media screen and (max-width: 600px) {
+    .globe-area .globe {
+      width: 100px;
+      height: 100px; } }
   .globe-area .globe:before {
     position: absolute;
     top: 0;

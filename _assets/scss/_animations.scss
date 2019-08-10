@@ -22,10 +22,10 @@
         transform: translate(50rem);
         
         @include bp(tablet){
-            transform: translate(20rem);
+            transform: translate(1024px);
         }
         @include bp(phone){
-            transform: translate(10rem);
+            transform: translate(600px);
         }
 
     }
@@ -73,7 +73,11 @@
         border-radius: 100%;
         box-shadow: 5px 5px 10px 5px rgba(27,178,184,1);
         animation: rotation 30s linear reverse infinite;
-    
+        
+        @include bp(phone){
+            width: 100px;
+            height: 100px;
+        }
 
         &:before {
             position: absolute;

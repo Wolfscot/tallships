@@ -13,6 +13,10 @@
         position: relative;
         overflow: hidden;
 
+        @include bp (phone) {
+            display: none;
+        }
+
         img {
             width: 90%;
             height:auto;
@@ -30,6 +34,14 @@
         color: var(--color-body-text);
         display:flex;
 
+        @include bp (phone) {
+            flex: 0 0 100%;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        
+
         legend {
             color: var(--color-body-a);
         }
@@ -40,7 +52,15 @@
             justify-items: space-between;
             align-items: center;
             font-family: 'Petit Formal Script', cursive;
-        }
+        
+
+            @include bp (phone) {
+                justify-content: center;
+                align-items: center;
+           
+        }        
+    }
+
         
         p {
             display: flex;
@@ -64,6 +84,11 @@
         label {
             flex: 0 0 45%;
             margin: 1em 0;
+
+            @include bp (phone) {
+                flex: 0 0 100%;
+            }
+
         }
 
         input, select, option {
@@ -74,6 +99,10 @@
             color: var(--color-body-box);
             width: 40%;
             margin: 1em 0;
+
+            @include bp (phone) {
+                flex: 0 0 100%;
+            }
         }
     }
 }
