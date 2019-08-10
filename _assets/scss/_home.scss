@@ -1,10 +1,19 @@
+.page-index .site {
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
 .content h3 {
     color: var(--color-body-text);
     padding: 0.5em 0;
+    margin: 1em 0;
 }
 .topics {
     background: var(--color-body-bgrd);
     color: var(--color-body-text);
+    margin: 1em 0;
     
     .topic {
         display: flex;

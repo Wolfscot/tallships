@@ -4,7 +4,7 @@
     <ul class="nav-list">
         {% assign nav = site.pages | sort:"order" %}
         {% for item in nav %}
-            {% if item.title and item.nomainnav != 1 %}    
+            {% if item.title %}    
             <li{% if item.url == page.url %} class="selected"{% endif %}>
                 <a href="{{ site.baseurl }}{{ item.url }}">
                     {% if item.icon %}<i class="fas {{ item.icon }}"></i>{% endif %}
