@@ -253,7 +253,7 @@ input[type=checkbox],
 .menu {
   display: none; }
 
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .menu {
     background: var(--color-body-navh);
     color: #ffff;
