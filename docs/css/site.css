@@ -21,7 +21,7 @@ html {
 
 html {
   font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size-body);
   line-height: 1.5;
   color: var(--color-body-text); }
 
@@ -63,6 +63,22 @@ p.author,
   font-size: 1em;
   color: var(--color-body-text);
   text-shadow: 2px 2px 2px #1f1f1f; }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: var(--font-size-body-little); } }
+
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: var(--font-size-body-small); } }
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+  html {
+    font-size: var(--font-size-body); } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: var(--font-size-body-big); } }
 
 .button {
   background: var(--color-body-a);
@@ -266,7 +282,8 @@ input[type=checkbox],
     font-size: 1.2em; }
   .menu i.fas:before {
     color: var(--color-body-text);
-    margin-right: 0.5em; }
+    margin-right: 0.5em;
+    display: block; }
   .nav-list {
     display: none; }
   input[type=checkbox]:checked ~ .nav-list {
@@ -475,14 +492,26 @@ input[type=checkbox],
   border: 1px solid var(--color-body-text); }
   .site-footer p {
     text-align: center;
-    font-weight: 500; }
+    font-weight: 500;
+    margin: 0 0.5em; }
   .site-footer .sponsors {
     border-bottom: 1px solid var(--color-body-text);
     border-top: 1px solid var(--color-body-text); }
     .site-footer .sponsors-list {
       display: flex;
       justify-content: space-between;
-      align-content: center; }
+      align-items: center; }
+      @media screen and (max-width: 1023px) {
+        .site-footer .sponsors-list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center; } }
+      @media screen and (max-width: 600px) {
+        .site-footer .sponsors-list {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
       .site-footer .sponsors-list li {
         list-style: none outside;
         display: block;
@@ -490,7 +519,8 @@ input[type=checkbox],
         .site-footer .sponsors-list li :last-child {
           margin-right: 1em; }
       .site-footer .sponsors-list a {
-        display: block; }
+        display: block;
+        margin: 1em; }
       .site-footer .sponsors-list img {
         display: block;
         width: auto;
@@ -596,13 +626,25 @@ body.loaded .site-nav li {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translate(70rem); } }
+    transform: translate(70rem);
+    @media screen and (max-width: 1023px) {
+      transform: translate(35rem); }
+    @media screen and (max-width: 600px) {
+      transform: translate(10rem); } } }
 
 @keyframes sail {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translate(70rem); } }
+    transform: translate(70rem);
+    @media screen and (max-width: 1023px) {
+      transform: translate(35rem); }
+    @media screen and (max-width: 600px) {
+      transform: translate(10rem); } } }
+
+@media screen and (max-width: 600px) {
+  .wheel {
+    display: none; } }
 
 .wheel img {
   margin-top: 2rem;

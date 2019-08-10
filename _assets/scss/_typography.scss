@@ -3,10 +3,11 @@
 
 html {
     font-family: 'Work Sans', Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: var(--font-size-body);
     line-height: 1.5;
     color: var(--color-body-text);
 }
+
 
 
 
@@ -43,3 +44,26 @@ p.author,
     
 }
 
+@media screen and (max-width:600px) {
+    html {
+        font-size: var(--font-size-body-little);
+    }
+}
+
+@media screen and (max-width:1023px) {
+    html {
+        font-size: var(--font-size-body-small);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px){
+    html {
+        font-size: var(--font-size-body);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: var(--font-size-body-big);
+    }
+}

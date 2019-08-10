@@ -6,6 +6,7 @@
     p {
         text-align: center;
         font-weight: 500;
+        margin: 0 0.5em;
     }
 
     .sponsors {
@@ -15,7 +16,24 @@
         &-list {
             display: flex;
             justify-content: space-between;
-            align-content: center;
+            align-items: center;
+
+            @include bp(tablet) {
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content: center;
+                align-items: center;
+                              
+            }
+
+            @include bp(phone) {
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                             
+            }
+
+            
 
             li {
                 list-style: none outside;
@@ -29,6 +47,7 @@
 
             a {
                 display: block;
+                margin: 1em;
             }
 
             img {
