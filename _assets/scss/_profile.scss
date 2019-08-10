@@ -8,20 +8,41 @@
     }
 
     ul.crew-list {
-    
+        padding:0 0 1em 0;
+        margin:0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         background: var(--color-body-box);
 
+        @include bp(tablet) {
+            justify-content: center;
+            
+        }
+        @include bp(phone) {
+            justify-content: center;
+            
+        }
         li {
-            flex:0 0 29%;
+            flex: 0 0 47%;
             display: block;
-            list-style: none outside;
+            list-style: none;
             text-align: center;
-            margin: 1em;
+            margin: 1em 0;
             padding-bottom:1em;
 
+            @include bp(tablet) {
+                flex: 0 0 30%;
+
+            }
+            @include bp(phone) {
+                flex: 0 0 95%;
+                
+            }
+            
+            span {
+                display:block;
+            }
             .crew-avatar {
                 display: block;
                 margin: 0 auto;

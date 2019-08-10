@@ -10,16 +10,16 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: reverse;
-
-    
+            
 }
+
 @keyframes sail {
     0% {
         transform: translateX(0);
     }
     
     100% {
-        transform: translate(70rem);
+        transform: translate(1600px);
         
         @include bp(tablet){
             transform: translate(1024px);

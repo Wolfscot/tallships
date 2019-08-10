@@ -12,6 +12,7 @@ html {
   --font-size-body-small: 14px;
   --font-size-body: 16px;
   --font-size-body-big: 18px;
+  --font-size-body-huge: 20px;
   --color-body-text:#ffffff;
   --color-body-anim: #027D8A;
   --color-body-navh: #014E6D;
@@ -80,6 +81,10 @@ p.author,
   html {
     font-size: var(--font-size-body-big); } }
 
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: var(--font-size-body-huge); } }
+
 .button {
   background: var(--color-body-a);
   color: var(--color-body-box);
@@ -124,6 +129,9 @@ p.author,
     padding: 0.5em; }
   .info p.author {
     text-align: right; }
+  .info ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; }
   .info li {
     list-style: none outside; }
   .info .travel, .info .ceremony {
@@ -424,7 +432,8 @@ input[type=checkbox],
       padding: 0.5em;
       background: var(--color-body-bgrd);
       color: var(--color-body-box);
-      width: 100%; }
+      width: 100%;
+      box-sizing: content-box; }
 
 .crew-content {
   padding: 0;
@@ -433,17 +442,33 @@ input[type=checkbox],
   .crew-content h4 {
     padding: 0.5em 0; }
   .crew-content ul.crew-list {
+    padding: 0 0 1em 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background: var(--color-body-box); }
+    @media screen and (max-width: 1024px) {
+      .crew-content ul.crew-list {
+        justify-content: center; } }
+    @media screen and (max-width: 600px) {
+      .crew-content ul.crew-list {
+        justify-content: center; } }
     .crew-content ul.crew-list li {
-      flex: 0 0 29%;
+      flex: 0 0 47%;
       display: block;
-      list-style: none outside;
+      list-style: none;
       text-align: center;
-      margin: 1em;
+      margin: 1em 0;
       padding-bottom: 1em; }
+      @media screen and (max-width: 1024px) {
+        .crew-content ul.crew-list li {
+          flex: 0 0 30%; } }
+      @media screen and (max-width: 600px) {
+        .crew-content ul.crew-list li {
+          flex: 0 0 95%; } }
+      .crew-content ul.crew-list li span {
+        display: block; }
       .crew-content ul.crew-list li .crew-avatar {
         display: block;
         margin: 0 auto;
@@ -636,7 +661,7 @@ body.loaded .site-nav li {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translate(70rem);
+    transform: translate(1600px);
     @media screen and (max-width: 1024px) {
       transform: translate(1024px); }
     @media screen and (max-width: 600px) {
@@ -646,7 +671,7 @@ body.loaded .site-nav li {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translate(70rem);
+    transform: translate(1600px);
     @media screen and (max-width: 1024px) {
       transform: translate(1024px); }
     @media screen and (max-width: 600px) {
