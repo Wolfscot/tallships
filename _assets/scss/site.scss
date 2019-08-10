@@ -1,16 +1,22 @@
+@import 'reset';
+
 @import 'variables';
 @import 'typography';
+@import 'mixins';
+
 @import 'buttons';
 @import 'layout';
 @import 'layout-pages';
+@import 'grid-article';
 
 @import 'site-header';
 @import 'navigation';
 @import 'home';
 @import 'form';
+@import 'profile';
 @import 'site-footer';
 
-@import 'grid-article';
-@import 'profile';
+
+
 @import 'transitions';
 @import 'animations';

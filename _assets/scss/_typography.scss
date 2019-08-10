@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Petit+Formal+Script|Work+Sans:400,700&display=swap');
 
-*, *:before *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+
 html {
     font-family: 'Work Sans', Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    box-sizing: border-box;
     color: var(--color-body-text);
 }
 

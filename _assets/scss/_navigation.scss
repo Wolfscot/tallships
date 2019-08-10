@@ -1,43 +1,98 @@
-.site-nav {
+.nav {
     background: var(--color-body-navh);
+    color: var(--color-body-text);
 
-    ul {
+    &-list {
         display:flex;
         padding: 0 0;
         margin: 0 0;
-    }
-    
-    li {
-        display: block;
-        list-style: none outside;
-        padding: 0.5em;
-    }
-    
-    a {
-        display: block;
-        padding: 0.5em;
-        border: 2px solid var(--color-body-navh);
-        border-radius:0.3em;
-        color: var(--color-body-text);
+
+        li {
+            display: block;
+            list-style: none outside;
+            padding: 0.5em;
+            position: relative;
+        }
         
-        i.fas:before {
-            color:var(--color-body-text);
-            margin-right:0.5em;
+        a {
+            display: block;
+            padding: 0.5em;
+            border: 2px solid var(--color-body-navh);
+            border-radius:0.3em;
+            color: var(--color-body-text);
+            
+            i.fas:before {
+                color:var(--color-body-text);
+                margin-right:0.5em;
+            }
         }
     }
+    
+    
 }
 
 
-.site-nav li.selected > a,
-.site-nav a:hover {
+.nav-list li.selected > a,
+.nav-list a:hover {
     background: var(--color-body-text);
     color: var(--color-body-navh);
     border: 2px solid var(--color-body-text);
 }
 
-.site-nav li.selected > a i.fas:before,
-.site-nav a:hover i.fas:before {
+.nav-list li.selected > a i.fas:before,
+.nav-list a:hover i.fas:before {
     background: var(--color-body-text);
     color: var(--color-body-navh);
     
+}
+
+input[type=checkbox],
+.menu{
+	display:none;
+}
+
+@media (max-width:1023px){
+	
+	.menu{
+        background: var(--color-body-navh);
+        color:#ffff;
+		display:flex;
+		cursor:pointer;
+		padding: 1em 0;
+        justify-content:center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+	}
+    .menu i.fas:before {
+        color:var(--color-body-text);
+        margin-right:0.5em;
+    }
+    
+	.nav-list{
+		display:none;
+	}
+	
+	
+	input[type=checkbox]:checked ~ .nav-list{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+	}
+	.nav-list li.selected > a,
+    .nav-list a:hover {
+        background: var(--color-body-text);
+        color: var(--color-body-navh);
+        border: 2px solid var(--color-body-text);
+}
+
+        .nav-list li.selected > a i.fas:before,
+        .nav-list a:hover i.fas:before {
+        background: var(--color-body-text);
+        color: var(--color-body-navh);
+    
+}
+	
 }
