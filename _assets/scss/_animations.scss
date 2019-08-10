@@ -19,7 +19,7 @@
     }
     
     100% {
-        transform: translate(50rem);
+        transform: translate(70rem);
         
         @include bp(tablet){
             transform: translate(1024px);
