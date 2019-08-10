@@ -86,13 +86,13 @@ input[type=checkbox],
         background: var(--color-body-text);
         color: var(--color-body-navh);
         border: 2px solid var(--color-body-text);
-}
+    }
 
-        .nav-list li.selected > a i.fas:before,
-        .nav-list a:hover i.fas:before {
+    .nav-list li.selected > a i.fas:before,
+    .nav-list a:hover i.fas:before {
         background: var(--color-body-text);
         color: var(--color-body-navh);
     
-}
+    }
 	
 }
